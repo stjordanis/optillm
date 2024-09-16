@@ -2,6 +2,7 @@ import re
 import logging
 
 logger = logging.getLogger(__name__)
+#  Code snippet for using self-reflection + CoT with <thinking> 🧠 Can be used with OpenAI-compatible endpoints (,e.g. Llama 3.1 70B; Gemma 2 27B) or to adjust for Anthropic Claude 3.5 or Google DeepMind Gemini. 🔥
 
 def cot_reflection(system_prompt, initial_query, client, model: str, return_full_response: bool=False):
     cot_prompt = f"""
